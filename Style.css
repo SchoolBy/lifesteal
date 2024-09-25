@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background: linear-gradient(to bottom, black, #ff0000);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background: linear-gradient(to right, #800000, black);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff4d4d;
+}
+
+.hero {
+    background: linear-gradient(to bottom, #800000, black);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about, .features, .join {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.feature-card {
+    background: rgba(0, 0, 0, 0.7);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ff0000;
+}
+
+.ip-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ff0000;
+    background: black;
+    color: white;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff4d4d;
+}
+
+.get-minecraft {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff0000;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.get-minecraft:hover {
+    background: #ff4d4d;
+}
+
+footer {
+    background: linear-gradient(to right, #800000, black);
+    text-align: center;
+    padding: 20px;
+}
