@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #ffffff;
-    background: linear-gradient(to bottom, #000000 0%, #ff0000 100%);
+    background: linear-gradient(to bottom, black, #ff0000);
 }
 
 .container {
@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(to right, #800000 0%, #000000 100%);
+    background: linear-gradient(to right, #800000, black);
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@ body {
 }
 
 .hero {
-    background: linear-gradient(to bottom, #800000 0%, #000000 100%);
+    background: linear-gradient(to bottom, #800000, black);
     text-align: center;
     padding: 80px 20px;
 }
@@ -107,7 +107,7 @@ button:hover {
 }
 
 footer {
-    background: linear-gradient(to right, #800000 0%, #000000 100%);
+    background: linear-gradient(to right, #800000, black);
     text-align: center;
     padding: 20px;
 }
