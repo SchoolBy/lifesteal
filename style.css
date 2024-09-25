@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #ffffff;
-    background: linear-gradient(to bottom, black, #ff0000);
+    background: linear-gradient(to bottom, #000000 0%, #ff0000 100%);
 }
 
 .container {
@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(to right, #800000, black);
+    background: linear-gradient(to right, #800000 0%, #000000 100%);
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -34,15 +34,16 @@ body {
 .nav-links a {
     color: #ffffff;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .nav-links a:hover {
     color: #ff4d4d;
+    transform: scale(1.1);
 }
 
 .hero {
-    background: linear-gradient(to bottom, #800000, black);
+    background: linear-gradient(to bottom, #800000 0%, #000000 100%);
     text-align: center;
     padding: 80px 20px;
 }
@@ -80,11 +81,13 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
 }
 
 button:hover {
     background: #ff4d4d;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.5);
 }
 
 .get-minecraft {
@@ -94,15 +97,17 @@ button:hover {
     background: #ff0000;
     color: white;
     text-decoration: none;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
 }
 
 .get-minecraft:hover {
     background: #ff4d4d;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.5);
 }
 
 footer {
-    background: linear-gradient(to right, #800000, black);
+    background: linear-gradient(to right, #800000 0%, #000000 100%);
     text-align: center;
     padding: 20px;
 }
