@@ -74,7 +74,7 @@ input {
     width: 200px;
 }
 
-button {
+button, .get-minecraft {
     padding: 10px 20px;
     background: #ff0000;
     color: white;
@@ -83,22 +83,14 @@ button {
     transition: background 0.3s;
 }
 
-button:hover {
+button:hover, .get-minecraft:hover {
     background: #ff4d4d;
 }
 
 .get-minecraft {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
-    background: #ff0000;
-    color: white;
     text-decoration: none;
-    transition: background 0.3s;
-}
-
-.get-minecraft:hover {
-    background: #ff4d4d;
 }
 
 footer {
