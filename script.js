@@ -12,19 +12,18 @@ function copyToClipboard() {
 
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', (event) => {
-        event.preventDefault(); // Prevent default anchor behavior
-
+        // Get the target section's ID from the href attribute
+        const targetId = link.getAttribute('href');
+        
+        // Smoothly scroll to the target section
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Show notification for the clicked link
         const message = `${link.textContent} section clicked!`;
         showNotification(message);
-        
-        // Optionally navigate to the section after a short delay
-        setTimeout(() => {
-            const targetId = link.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            if (targetSection) {
-                targetSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        }, 1000); // Delay navigation to allow the notification to show
     });
 });
 
