@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-    background: transparent; /* Remove separate gradient */
+    background: transparent;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -21,8 +21,6 @@ body {
 
 .logo {
     font-size: 2em;
-    display: flex;
-    align-items: center;
 }
 
 .nav-links {
@@ -37,12 +35,13 @@ body {
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a:focus {
     color: #ff4d4d;
+    outline: none; /* Remove default outline */
 }
 
 .hero {
-    background: transparent; /* Remove separate gradient */
     text-align: center;
     padding: 80px 20px;
 }
@@ -63,7 +62,7 @@ body {
 .ip-container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Center the input and button */
+    align-items: center;
     margin: 20px 0;
 }
 
@@ -82,11 +81,15 @@ button, .get-minecraft {
     border: none;
     cursor: pointer;
     transition: background 0.3s;
-    border-radius: 5px; /* Add rounded corners */
+    border-radius: 5px;
 }
 
-button:hover, .get-minecraft:hover {
+button:hover,
+.get-minecraft:hover,
+button:focus,
+.get-minecraft:focus {
     background: #ff4d4d;
+    outline: none;
 }
 
 .get-minecraft {
@@ -96,10 +99,11 @@ button:hover, .get-minecraft:hover {
 }
 
 footer {
-    background: transparent; /* Remove separate gradient */
+    background: transparent;
     text-align: center;
     padding: 20px;
 }
+
 .notification {
     position: fixed;
     top: 20px;
