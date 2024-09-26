@@ -9,6 +9,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 1200px; /* Limit width for better readability */
+    margin: auto; /* Center the container */
 }
 
 .header {
@@ -74,13 +76,18 @@ input {
     width: 200px;
 }
 
+input:focus {
+    border-color: #ff4d4d;
+    outline: none; /* Remove default outline */
+}
+
 button, .get-minecraft {
     padding: 10px 20px;
     background: #ff0000;
     color: white;
     border: none;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s; /* Added transition for transform */
     border-radius: 5px;
 }
 
@@ -90,6 +97,7 @@ button:focus,
 .get-minecraft:focus {
     background: #ff4d4d;
     outline: none;
+    transform: scale(1.05); /* Slightly scale up on hover */
 }
 
 .get-minecraft {
@@ -102,4 +110,27 @@ footer {
     background: transparent;
     text-align: center;
     padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column; /* Stack nav links on small screens */
+        gap: 10px;
+    }
+
+    .feature-card {
+        margin: 10px 0; /* Reduce margin for smaller screens */
+    }
+
+    .hero {
+        padding: 40px 10px; /* Adjust padding */
+    }
+}
+
+/* Focus Styles for Better Accessibility */
+button:focus,
+.get-minecraft:focus {
+    outline: 2px solid #ff4d4d; /* Add a visible outline */
+    outline-offset: 2px;
 }
